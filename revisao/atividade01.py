@@ -1,16 +1,6 @@
-for i in range (5,0,-1):
-    print('rodada',i)
-print('começou')
- 
-def ganhou_partida(pontos):
-    if pontos>=500:
-        return True
-    else:
-        return False
-    
-p= int(input('sua pontuação: '))
-while ganhou_partida(p):
-    print('você ganhou')
+nivel= float(input('qual seu nível?: '))
+energia= float(input('quanto de energia tem?: '))
+if nivel >=15 and energia >50:
+   print('chefão liberado')
 else:
-    print('continue')
-    
+   print('trabalhe mais')
